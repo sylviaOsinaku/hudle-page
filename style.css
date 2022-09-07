@@ -1,0 +1,66 @@
+body{
+  background-image: url(images/bg-desktop.svg);
+  background-color: hsl(257, 40%, 49%);
+}
+*{
+  margin: 0;
+}
+main{
+  padding: 0 3em;
+}
+section{
+  display: flex;
+  margin-top: 2.5em;
+ 
+}
+.logo-image{
+  width: 20%;
+  object-fit: contain;
+}
+.illustration-image{
+  width: 50%;
+  object-fit: contain;
+}
+h1{
+  color: white;
+  font-size: 1.5rem;
+}
+div{
+  margin-top: 3em;
+  margin-left: 2em;
+}
+p{
+  color: white;
+  font-size: .75rem;
+  margin-top: 1.3em;
+}
+button{
+  margin-top: .75em;
+  padding: .4em 1.7em;
+  color:hsl(257, 40%, 49%) ;
+  border: none;
+  border-radius: 1em;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s;
+}
+button:active{
+  color: white;
+  background-color:hsl(300, 69%, 71%) ;
+}
+@media (max-width:420px){
+  body{
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+  }
+  section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main{
+    padding: 0em 1em;
+  }
+  div{
+    text-align: center;
+  }
+}
